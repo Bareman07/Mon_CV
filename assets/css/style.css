@@ -1,0 +1,27 @@
+body {
+    background-color:#782221;
+}
+
+#area-top { 
+    color: white;
+}
+
+#area-grey { 
+    background-color: #2c1d27;
+    width:1160pxpx;
+    height: 100px;
+    gap:20px;
+    color: white;
+}
+
+#area-left { 
+    color: white;
+}
+
+#area-white { 
+    background-color: white;
+    width:700px;
+    height: 500px;
+    gap:20px;
+    color: black;
+}
