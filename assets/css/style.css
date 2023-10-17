@@ -1,61 +1,68 @@
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-section{
+section {
     height: 1640px;
     width: 1160px;
     display: flex;
     flex-direction: row ;
     flex-wrap: wrap ;
     justify-content:center; 
-    
     text-align: center; 
 }
 
 #text-body {
     background-color:#782221;
+    
 }
 
 #area-top { 
-    background-color:#831571;
+    height: 17%;
+    width:30%;
     color: white;
     order: 0;
+    align-self: center;
+    flex-basis: 100%;
+}
+
+.Photo_arrondi {
+    box-shadow: 0em 0em 2em white;
+    margin: 1em 0em 0em;
+    width:10em;
+    border-radius: 50%;
 }
 
 #area-grey { 
+    height: 8%;
     display: flex;
     background-color: #2c1d27;
     color: white;
     justify-content: space-between ;
     order: 1;
+    flex-basis: 100%;
 }
 
 #area-grey-1 { 
-    background-color:#10701c;
-    grid-column:1;
-    margin : 1em;
-    
+    margin : 2em;
 }
 
 #area-grey-2 { 
-    background-color:#2a2178;
-    grid-column:2;
-    margin : 1em 2em 1em 0;
+    margin : 2em 2em 1em 0;
 }
 
 #area-grey-3 { 
-    background-color:#a8a621;
-    grid-column:3;
-    margin : 1em;
+    margin : 2em;
 }
 
 #area-left { 
+    height: 65%;
     color: white;
     text-align: start;
     order: 2;
+    flex-basis: 22%;
 }
 
 #area-left h1 {
@@ -64,10 +71,12 @@ section{
 }
 
 #area-white { 
+    height: 65%;
     background-color: white;
     color: black;
     text-align: start;
     order: 3;
+    flex-basis: 78%; /* Ceci définit la taille par défaut d'un élément avant que l'espace restant ne soit distribué */
 }
 
 #area-white h1 {
@@ -75,6 +84,7 @@ section{
 }
 
 #area-bottom {
+    height: 10%;
     color: white;
     order: 4;
 }
