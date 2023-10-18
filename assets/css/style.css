@@ -1,3 +1,31 @@
+/* Police de caractere */ 
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-VariableFont_wght.woff);
+    src: url(../fonts/Raleway-VariableFont_wght.ttf) format('truetype')
+    /* url(../fonts/)*/ ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+p {
+    font-family: "Raleway" , serif ; /* la "," choix alternatif*/
+}
+
+h1 {
+    font-size: 2em ;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+/* definition des élements en flexbox et alignement */ 
 body {
     display: flex;
     align-items: center;
@@ -14,9 +42,9 @@ section {
     text-align: center; 
 }
 
+/* Definition des diffenrents Zones */ 
 #text-body {
     background-color:#782221;
-    
 }
 
 #area-top { 
@@ -76,7 +104,7 @@ section {
     color: black;
     text-align: start;
     order: 3;
-    flex-basis: 78%; /* Ceci définit la taille par défaut d'un élément avant que l'espace restant ne soit distribué */
+    flex-basis: 78%; /* Ceci définit la taille par défaut d'un élément avant que l'espace restant ne soit distribué dans l'axe horizontale*/
 }
 
 #area-white h1 {
@@ -87,4 +115,26 @@ section {
     height: 10%;
     color: white;
     order: 4;
+}
+
+/*rajout des fonction et liens*/
+
+.Photo_arrondi:hover{
+    font-size:1.5em; /* Quand on zoom en survolant */
+    cursor: zoom-in; /* affiche la loupe*/
+}
+
+#area-grey a {
+    color: white;
+    text-decoration-line: none;
+}
+
+#area-grey a:hover{
+    text-decoration-line: underline;
+}
+
+#area-bottom img {
+    margin: 2em 0.5em 0em;
+    height: 2em;
+    width: 2em;
 }
