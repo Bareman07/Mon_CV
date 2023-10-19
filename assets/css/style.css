@@ -10,11 +10,20 @@
 
 
 p {
-    font-family: "Raleway" , serif ; /* la "," choix alternatif*/
+    font-family: "Raleway" ,"Lato", serif ; /* la "," choix alternatif*/
+    font-size: 1em ;
 }
 
 h1 {
-    font-size: 2em ;
+    font-size: 1.5em ;
+}
+
+h2 {
+    font-size: 1.2em ;
+}
+
+#area-white li {
+    margin-left: 1.5em;
 }
 
 .bold{
@@ -25,7 +34,12 @@ h1 {
     font-style: italic;
 }
 
-/* definition des élements en flexbox et alignement */ 
+#area-left p {
+    text-indent: 1.5em;
+    margin : 0em 0.5em 0em 0.5em;
+}
+
+/* definition des Elements en flexbox et alignement */ 
 body {
     display: flex;
     align-items: center;
@@ -74,15 +88,20 @@ section {
 }
 
 #area-grey-1 { 
-    margin : 2em;
+    width:22%;
+    margin : 1.5em 0em 0em 2em;
+    text-align: start;
 }
 
 #area-grey-2 { 
-    margin : 2em 2em 1em 0;
+    width:22%;
+    margin : 2em 0em 0em 0em; /* haut | droit | bas | gauche */
 }
 
 #area-grey-3 { 
-    margin : 2em;
+    width:22%;
+    margin : 2em 2em 0em 0em;
+    text-align: end; 
 }
 
 #area-left { 
@@ -90,12 +109,15 @@ section {
     color: white;
     text-align: start;
     order: 2;
-    flex-basis: 22%;
+    flex-basis: 28%;
+    margin-right: -0.1em;
 }
 
 #area-left h1 {
     color: black;
     background-color: #dbc2a4;
+    margin : 1em 1.5em 1em -0.1em;
+    text-indent: 1em;
 }
 
 #area-white { 
@@ -104,11 +126,24 @@ section {
     color: black;
     text-align: start;
     order: 3;
-    flex-basis: 78%; /* Ceci définit la taille par défaut d'un élément avant que l'espace restant ne soit distribué dans l'axe horizontale*/
+    flex-basis: 72%; /* Ceci definit la taille par defaut d'un Element avant que l'espace restant ne soit distribue dans l'axe horizontale*/
+    margin-right: -0.1em;
+    border-right: 0.1em solid black; /* largeur | style | couleur */
 }
 
 #area-white h1 {
     background-color: #dbc2a4;
+    margin : 1em 1.5em 1em 1.5em;
+    box-shadow : -0.5em 0em 0em 0em #782221;/* offset-x | offset-y | blur-radius | spread-radius | color */
+    text-indent: 0.5em;
+}
+
+#area-white h2 {
+    margin-left: 1.5em;
+}
+
+#area-white p {
+    margin-left: 1.5em;
 }
 
 #area-bottom {
