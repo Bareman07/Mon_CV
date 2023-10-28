@@ -8,24 +8,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
-
 p {
     font-family: "Raleway" ,"Lato", serif ; /* la "," choix alternatif*/
-    font-size: 1em ;
+    font-size: 0.9em ;
 }
 
 h1 {
-    font-size: 1.5em ;
+    font-size: 1.4em ;
 }
 
 h2 {
     font-size: 1.2em ;
 }
 
+h3 {
+    font-size: 1em ;
+}
+
 #area-white li {
     margin-left: 1.5em;
 }
 
+/* element non necessaire pour ce devoir
 .bold{
     font-weight:bold;
 }
@@ -33,6 +37,7 @@ h2 {
 .italic{
     font-style: italic;
 }
+*/
 
 #area-left p {
     text-indent: 1.5em;
@@ -46,9 +51,10 @@ body {
     justify-content: center;
 }
 
-section {
+#text-body {
     height: 1640px;
     width: 1160px;
+    background-color:#782221;
     display: flex;
     flex-direction: row ;
     flex-wrap: wrap ;
@@ -57,9 +63,6 @@ section {
 }
 
 /* Definition des diffenrents Zones */ 
-#text-body {
-    background-color:#782221;
-}
 
 #area-top { 
     height: 17%;
@@ -68,12 +71,13 @@ section {
     order: 0;
     align-self: center;
     flex-basis: 100%;
+    font-family: "Lato","Raleway" , serif ;
 }
 
 .Photo_arrondi {
     box-shadow: 0em 0em 2em white;
     margin: 1em 0em 0em;
-    width:10em;
+    width:9em;
     border-radius: 50%;
 }
 
@@ -87,25 +91,25 @@ section {
     flex-basis: 100%;
 }
 
-#area-grey-1 { 
-    width:22%;
+.adress { 
+    width:25%;
     margin : 1.5em 0em 0em 2em;
     text-align: start;
 }
 
-#area-grey-2 { 
-    width:22%;
+.mail { 
+    width:25%;
     margin : 2em 0em 0em 0em; /* haut | droit | bas | gauche */
 }
 
-#area-grey-3 { 
-    width:22%;
+.phone { 
+    width:25%;
     margin : 2em 2em 0em 0em;
     text-align: end; 
 }
 
 #area-left { 
-    height: 65%;
+    height: 100%;
     color: white;
     text-align: start;
     order: 2;
@@ -113,37 +117,41 @@ section {
     margin-right: -0.1em;
 }
 
-#area-left h1 {
-    color: black;
-    background-color: #dbc2a4;
-    margin : 1em 1.5em 1em -0.1em;
-    text-indent: 1em;
+.article-area-left {
+    font-family: "Raleway" ,"Lato", serif ;
+     h2 {
+        color: black;
+        background-color: #dbc2a4;
+        margin : 1em 1.5em 1em 0em;
+        text-indent: 1em;
+    }
 }
 
 #area-white { 
-    height: 65%;
+    height: 100%;
     background-color: white;
     color: black;
     text-align: start;
     order: 3;
     flex-basis: 72%; /* Ceci definit la taille par defaut d'un Element avant que l'espace restant ne soit distribue dans l'axe horizontale*/
-    margin-right: -0.1em;
     border-right: 0.1em solid black; /* largeur | style | couleur */
 }
 
-#area-white h1 {
-    background-color: #dbc2a4;
-    margin : 1em 1.5em 1em 1.5em;
-    box-shadow : -0.5em 0em 0em 0em #782221;/* offset-x | offset-y | blur-radius | spread-radius | color */
-    text-indent: 0.5em;
-}
 
-#area-white h2 {
-    margin-left: 1.5em;
-}
-
-#area-white p {
-    margin-left: 1.5em;
+.article-area-white {
+    font-family: "Raleway" ,"Lato", serif ;
+    p {
+        margin-left: 1.5em;
+    }
+    h2 {
+        background-color: #dbc2a4;
+        margin : 1em 1.5em 1em 1.5em;
+        box-shadow : -0.5em 0em 0em 0em #782221;/* offset-x | offset-y | blur-radius | spread-radius | color */
+        text-indent: 0.5em;
+    }
+    h3 {
+        margin-left: 1.5em;
+    }
 }
 
 #area-bottom {
@@ -155,13 +163,17 @@ section {
 /*rajout des fonction et liens*/
 
 .Photo_arrondi:hover{
-    font-size:1.5em; /* Quand on zoom en survolant */
+    /*font-size:1.5em;*/ /* Quand on zoom en survolant */
     cursor: zoom-in; /* affiche la loupe*/
 }
 
 #area-grey a {
     color: white;
     text-decoration-line: none;
+}
+
+#area-grey p {
+    font-style: italic;
 }
 
 #area-grey a:hover{
@@ -172,4 +184,15 @@ section {
     margin: 2em 0.5em 0em;
     height: 2em;
     width: 2em;
+}
+
+#area-bottom img:hover {
+opacity: 0.6;
+}
+
+#area-center {
+    height: 65%;
+    width: 100%;
+    order: 3;
+    display: flex;
 }
