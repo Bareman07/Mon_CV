@@ -143,6 +143,10 @@ body {
     p {
         margin-left: 1.5em;
     }
+    li:hover{
+        border-right: solid #782221;
+        border-right-width: 0.5em;
+    }
     h2 {
         background-color: #dbc2a4;
         margin : 1em 1.5em 1em 1.5em;
@@ -151,6 +155,10 @@ body {
     }
     h3 {
         margin-left: 1.5em;
+    }
+    h3:hover{
+        border-right: solid #782221;
+        border-right-width: 0.5em;
     }
 }
 
