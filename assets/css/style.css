@@ -1,28 +1,41 @@
 /* Police de caractere */ 
 @font-face {
     font-family: "Raleway";
-    src: url(../fonts/Raleway-VariableFont_wght.woff);
-    src: url(../fonts/Raleway-VariableFont_wght.ttf) format('truetype')
+    src: url(../fonts/Raleway-VariableFont_wght.woff),
+    url(../fonts/Raleway-VariableFont_wght.ttf) format('truetype')
     /* url(../fonts/)*/ ;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 p {
-    font-family: "Raleway" ,"Lato", serif ; /* la "," choix alternatif*/
+    font-family: "Raleway", serif; /* la "," choix alternatif*/
     font-size: 0.9em ;
 }
 
+li {
+    font-family: "Raleway", serif;
+    font-size: 1em ;
+}
+
 h1 {
+    font-family: "Lato", serif;
     font-size: 1.4em ;
 }
 
 h2 {
-    font-size: 1.2em ;
+    font-family: "Lato", serif;
+    font-size: 1.1em ;
 }
 
 h3 {
+    font-family: "Lato", serif;
     font-size: 1em ;
+}
+
+adress {
+    font-weight: bold;
+    font-style: italic;
 }
 
 #area-white li {
@@ -41,7 +54,7 @@ h3 {
 
 #area-left p {
     text-indent: 1.5em;
-    margin : 0em 0.5em 0em 0.5em;
+    margin : 0em 0.5em 0em 1.5em;
 }
 
 /* definition des Elements en flexbox et alignement */ 
@@ -71,7 +84,6 @@ body {
     order: 0;
     align-self: center;
     flex-basis: 100%;
-    font-family: "Lato","Raleway" , serif ;
 }
 
 .Photo_arrondi {
@@ -118,7 +130,6 @@ body {
 }
 
 .article-area-left {
-    font-family: "Raleway" ,"Lato", serif ;
      h2 {
         color: black;
         background-color: #dbc2a4;
@@ -139,7 +150,6 @@ body {
 
 
 .article-area-white {
-    font-family: "Raleway" ,"Lato", serif ;
     p {
         margin-left: 1.5em;
     }
@@ -180,10 +190,6 @@ body {
     text-decoration-line: none;
 }
 
-#area-grey p {
-    font-style: italic;
-}
-
 #area-grey a:hover{
     text-decoration-line: underline;
 }
@@ -194,7 +200,7 @@ body {
     width: 2em;
 }
 
-#area-bottom img:hover {
+.Link-social-Network:hover {
 opacity: 0.6;
 }
 
